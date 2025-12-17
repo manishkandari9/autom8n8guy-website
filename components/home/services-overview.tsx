@@ -8,44 +8,49 @@ import { ArrowRight, Globe, Layers, Workflow, Bot } from "lucide-react"
 
 const services = [
   {
-    icon: Globe,
-    title: "Web Development",
-    description: "Custom websites that convert visitors into customers. From business sites to e-commerce platforms.",
-    href: "/services/web-development",
-    features: ["Business Websites", "E-commerce", "Landing Pages", "SEO Optimization"],
-  },
-  {
-    icon: Layers,
-    title: "Full-Stack Development",
-    description: "Powerful web applications built with modern technologies. SaaS, dashboards, and custom solutions.",
-    href: "/services/full-stack",
-    features: ["Custom Web Apps", "SaaS Products", "Admin Dashboards", "API Development"],
-  },
-  {
     icon: Workflow,
-    title: "Business Automation",
-    description: "Streamline operations with intelligent automation. Save time and reduce errors with n8n workflows.",
-    href: "/services/automation",
-    features: ["Process Automation", "CRM Integration", "Email Workflows", "Data Scraping"],
+    title: "AI Workflow Automation",
+    description:
+      "Automate repetitive business workflows using AI-powered logic and n8n to connect tools, systems, and data.",
+    href: "/ai-workflow-automation",
+    features: ["n8n Workflows", "Process Automation", "System Integrations", "Data Sync"],
   },
   {
     icon: Bot,
-    title: "AI Solutions",
-    description: "Leverage artificial intelligence to enhance your business. Chatbots, agents, and custom AI tools.",
-    href: "/services/ai",
-    features: ["AI Chatbots", "AI Agents", "Custom AI Tools", "AI Integration"],
+    title: "AI Chatbots & Agents",
+    description:
+      "Build intelligent AI chatbots and agents that handle customer support, lead qualification, and internal queries.",
+    href: "/ai-chatbot-automation",
+    features: ["AI Chatbots", "AI Agents", "Customer Support", "Lead Automation"],
+  },
+  {
+    icon: Globe,
+    title: "AI Automation for Websites",
+    description:
+      "Integrate AI automation into modern websites to capture leads, trigger workflows, and sync backend systems.",
+    href: "/ai-automation-for-websites",
+    features: ["AI Forms", "Lead Automation", "Website Integrations", "Conversion Tracking"],
+  },
+  {
+    icon: Layers,
+    title: "Backend & System Automation",
+    description:
+      "Create scalable backend automation connecting databases, APIs, and business tools for smooth operations.",
+    href: "/backend-automation",
+    features: ["API Automation", "Database Sync", "System Workflows", "Scalable Architecture"],
   },
 ]
+
 
 export function ServicesOverview() {
   return (
     <Section id="services">
       <FadeIn>
         <SectionHeader
-          eyebrow="What We Do"
-          title="Our collection of tech services spans every stage of digital transformation"
-          description="Explore how we help businesses transform with cutting-edge technology solutions."
-        />
+        eyebrow="What We Do"
+        title="AI Automation Services Built for Modern Businesses"
+        description="From intelligent workflows and AI chatbots to website and backend automation, we design systems that streamline operations and drive growth."/>
+
       </FadeIn>
 
       <StaggerChildren className="grid md:grid-cols-2 gap-6">

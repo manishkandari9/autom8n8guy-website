@@ -1,7 +1,15 @@
+"use client"
 import type { Metadata } from "next"
 import { LocationPageTemplate } from "@/components/location-page-template"
 import { CTA } from "@/components/home/cta"
-import { Bot, MessageSquare, Brain, Zap, Workflow, Wrench } from "lucide-react"
+import {
+  Bot,
+  MessageSquare,
+  Brain,
+  Zap,
+  Workflow,
+  Wrench,
+} from "lucide-react"
 
 export const metadata: Metadata = {
   title: "AI Solutions in Dehradun | Chatbots & AI Automation",

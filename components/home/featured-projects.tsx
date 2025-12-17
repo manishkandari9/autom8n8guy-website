@@ -10,22 +10,25 @@ import { ArrowRight } from "lucide-react"
 const projects = [
   {
     title: "Rishikesh Yoga House",
-    category: "Web Development",
-    description: "A beautiful, conversion-focused website for a leading yoga school with online booking integration.",
+    category: "AI-Enabled Website & Booking Automation",
+    description:
+      "An AI-enabled website with automated booking workflows, lead follow-ups, and customer communication for a leading yoga school.",
     image: "/yoga-website-modern-design.jpg",
     href: "/projects/rishikesh-yoga-house",
   },
   {
     title: "Himalayan Stays",
-    category: "Full-Stack Application",
-    description: "Complete hotel management system with booking engine and admin dashboard.",
+    category: "AI Automation for Hotel Operations",
+    description:
+      "An AI automation system for hotel management including booking workflows, admin operations, and automated guest communication.",
     image: "/hotel-booking-app-dashboard.jpg",
     href: "/projects/himalayan-stays",
   },
   {
     title: "AutoFlow CRM",
-    category: "Automation",
-    description: "Custom n8n automation workflows that saved 20+ hours per week for a local business.",
+    category: "n8n Workflow & Business Automation",
+    description:
+      "Custom n8n-based AI automation workflows that reduced manual work and saved over 20 hours per week for a local business.",
     image: "/automation-workflow-dashboard.png",
     href: "/projects/autoflow-crm",
   },
@@ -37,10 +40,16 @@ export function FeaturedProjects() {
       <FadeIn>
         <SectionHeader
           eyebrow="Featured Work"
-          title="Projects that drive real results"
-          description="A selection of recent projects for businesses in Uttarakhand."
+          title="AI Automation Projects That Deliver Real Business Results"
+          description="A selection of AI automation, workflow, and system projects built for businesses in Uttarakhand."
         />
       </FadeIn>
+
+      {/* AEO BOOST */}
+      <p className="sr-only">
+        AI automation projects show how intelligent workflows, system integrations,
+        and tools like n8n help businesses reduce manual work and improve efficiency.
+      </p>
 
       <StaggerChildren className="grid lg:grid-cols-3 gap-8">
         {projects.map((project) => (
@@ -52,14 +61,21 @@ export function FeaturedProjects() {
               <div className="aspect-[3/2] overflow-hidden">
                 <img
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={`${project.title} AI automation project`}
+                  loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <span className="text-xs text-primary font-medium uppercase tracking-wide">{project.category}</span>
-                <h3 className="text-xl font-semibold text-foreground mt-2 mb-3">{project.title}</h3>
-                <p className="text-muted-foreground text-sm">{project.description}</p>
+                <span className="text-xs text-primary font-medium uppercase tracking-wide">
+                  {project.category}
+                </span>
+                <h3 className="text-xl font-semibold text-foreground mt-2 mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {project.description}
+                </p>
               </div>
             </Link>
           </StaggerItem>
@@ -70,7 +86,7 @@ export function FeaturedProjects() {
         <div className="mt-12 text-center">
           <Button variant="outline" size="lg" asChild className="group bg-transparent">
             <Link href="/projects">
-              View All Projects
+              View All AI Automation Projects
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>

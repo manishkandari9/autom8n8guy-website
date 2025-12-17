@@ -8,48 +8,37 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const services = [
   {
-    category: "Web Development",
+    category: "AI Automation",
     items: [
-      { name: "Business Websites", href: "/services/web-development/business-websites" },
-      { name: "Landing Pages", href: "/services/web-development/landing-pages" },
-      { name: "E-commerce", href: "/services/web-development/ecommerce" },
-      { name: "Portfolio Websites", href: "/services/web-development/portfolio" },
-      { name: "Website Redesign", href: "/services/web-development/redesign" },
+      { name: "Business Process Automation", href: "/automation/business-process" },
+      { name: "n8n Workflow Automation", href: "/automation/n8n-workflows" },
+      { name: "CRM & Lead Automation", href: "/automation/crm" },
+      { name: "Email & WhatsApp Automation", href: "/automation/communication" },
     ],
   },
   {
-    category: "Full-Stack Development",
+    category: "Automation Solutions",
     items: [
-      { name: "Custom Web Apps", href: "/services/full-stack/custom-web-apps" },
-      { name: "SaaS Development", href: "/services/full-stack/saas" },
-      { name: "Admin Dashboards", href: "/services/full-stack/dashboards" },
-      { name: "API Development", href: "/services/full-stack/api-development" },
+      { name: "Website Automation", href: "/solutions/website-automation" },
+      { name: "Backend & API Automation", href: "/solutions/backend-automation" },
+      { name: "Dashboard & Reporting", href: "/solutions/dashboards" },
     ],
   },
   {
-    category: "Automation",
+    category: "Supporting Services",
     items: [
-      { name: "Business Process Automation", href: "/services/automation/business-process" },
-      { name: "CRM Automation", href: "/services/automation/crm" },
-      { name: "n8n Workflows", href: "/services/automation/n8n-workflows" },
-      { name: "Email Automation", href: "/services/automation/email" },
-    ],
-  },
-  {
-    category: "AI Solutions",
-    items: [
-      { name: "AI Chatbots", href: "/services/ai/chatbots" },
-      { name: "AI Agents", href: "/services/ai/agents" },
-      { name: "Custom AI Tools", href: "/services/ai/custom-tools" },
-      { name: "AI Integration", href: "/services/ai/integration" },
+      { name: "Web Development", href: "/services/web-development" },
+      { name: "Full-Stack Development", href: "/services/full-stack" },
+      { name: "AI Integrations", href: "/services/ai-integration" },
     ],
   },
 ]
 
+
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services", hasDropdown: true },
+  { name: "Automation", href: "/automation", hasDropdown: true },
   { name: "Industries", href: "/industries" },
   { name: "Projects", href: "/projects" },
   { name: "Blog", href: "/blog" },
@@ -67,9 +56,9 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">TC</span>
+              <span className="text-primary-foreground font-bold text-sm">AS</span>
             </div>
-            <span className="font-semibold text-lg text-foreground">TechCraft</span>
+            <span className="font-semibold text-lg text-foreground">Autom8Solution</span>
           </Link>
 
           {/* Desktop Navigation */}

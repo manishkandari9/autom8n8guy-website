@@ -8,32 +8,38 @@ const steps = [
   {
     number: "01",
     title: "Discovery",
-    description: "We start by understanding your business, goals, and challenges through in-depth consultation.",
+    description:
+      "We analyze your business workflows, automation goals, existing systems, and operational challenges in detail.",
   },
   {
     number: "02",
-    title: "Strategy",
-    description: "We create a detailed roadmap with clear milestones, timelines, and technical specifications.",
+    title: "Automation Strategy",
+    description:
+      "We create a clear AI automation roadmap defining workflows, integrations, tools like n8n, and success metrics.",
   },
   {
     number: "03",
-    title: "Design",
-    description: "Our designers create intuitive, modern interfaces that align with your brand identity.",
+    title: "System Design",
+    description:
+      "We design automation logic, data flows, and system architecture to ensure scalability and reliability.",
   },
   {
     number: "04",
-    title: "Development",
-    description: "We build your solution using modern technologies with clean, maintainable code.",
+    title: "Implementation",
+    description:
+      "We build AI automation systems using clean workflows, backend integrations, and maintainable architectures.",
   },
   {
     number: "05",
-    title: "Testing",
-    description: "Rigorous testing ensures your product works flawlessly across all devices and scenarios.",
+    title: "Testing & Optimization",
+    description:
+      "Each automation workflow is tested and optimized for accuracy, performance, and real-world edge cases.",
   },
   {
     number: "06",
-    title: "Launch & Support",
-    description: "We deploy your solution and provide ongoing maintenance and support.",
+    title: "Launch & Ongoing Support",
+    description:
+      "We deploy the automation system and provide continuous monitoring, optimization, and long-term support.",
   },
 ]
 
@@ -43,10 +49,16 @@ export function Process() {
       <FadeIn>
         <SectionHeader
           eyebrow="How We Work"
-          title="A systematic approach to building digital excellence"
-          description="Our proven process ensures every project is delivered on time and exceeds expectations."
+          title="A Proven Process for Delivering AI Automation Systems"
+          description="Our structured approach ensures every AI automation solution is scalable, reliable, and aligned with real business workflows."
         />
       </FadeIn>
+
+      {/* AEO BOOST */}
+      <p className="sr-only">
+        AI automation projects follow a structured process including discovery,
+        strategy, system design, implementation, testing, deployment, and ongoing optimization.
+      </p>
 
       <StaggerChildren className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {steps.map((step) => (
@@ -54,7 +66,9 @@ export function Process() {
             <div className="relative">
               <span className="text-6xl font-bold text-primary/10">{step.number}</span>
               <div className="mt-2">
-                <h3 className="text-xl font-semibold text-foreground mb-2">{step.title}</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  {step.title}
+                </h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </div>
             </div>

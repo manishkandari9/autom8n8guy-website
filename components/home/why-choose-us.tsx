@@ -8,46 +8,59 @@ import { Shield, Clock, Users, Award, Headphones, Rocket } from "lucide-react"
 const reasons = [
   {
     icon: Shield,
-    title: "Quality Assurance",
-    description: "Every project undergoes rigorous testing to ensure flawless performance and security.",
+    title: "Reliable AI Automation Systems",
+    description:
+      "Every AI automation workflow is carefully tested to ensure accuracy, security, and long-term reliability.",
   },
   {
     icon: Clock,
-    title: "On-Time Delivery",
-    description: "We respect deadlines and deliver projects on schedule without compromising quality.",
+    title: "Automation Delivered On Time",
+    description:
+      "We design and deploy AI automation systems on schedule without compromising performance or scalability.",
   },
   {
     icon: Users,
-    title: "Local Expertise",
-    description: "We understand the unique needs of businesses in Dehradun and Rishikesh.",
+    title: "Local Automation Expertise",
+    description:
+      "We understand real AI automation and workflow needs of businesses in Dehradun and Rishikesh.",
   },
   {
     icon: Award,
-    title: "Proven Track Record",
-    description: "50+ successful projects and counting with 98% client satisfaction rate.",
+    title: "Proven Automation Results",
+    description:
+      "Our AI automation solutions consistently reduce manual work and improve operational efficiency.",
   },
   {
     icon: Headphones,
-    title: "Dedicated Support",
-    description: "Ongoing maintenance and support to keep your digital solutions running smoothly.",
+    title: "Ongoing Automation Support",
+    description:
+      "We provide continuous monitoring, optimization, and support for AI automation systems after launch.",
   },
   {
     icon: Rocket,
-    title: "Modern Technology",
-    description: "We use the latest technologies to build scalable, future-proof solutions.",
+    title: "Scalable Automation Architecture",
+    description:
+      "Our AI automation systems are built to scale smoothly as business operations grow.",
   },
 ]
+
 
 export function WhyChooseUs() {
   return (
     <Section className="bg-card">
-      <FadeIn>
-        <SectionHeader
-          eyebrow="Why Choose Us"
-          title="The TechCraft difference"
-          description="What sets us apart from other IT service providers in Uttarakhand."
-        />
-      </FadeIn>
+     <FadeIn>
+  <SectionHeader
+    eyebrow="Why Choose Us"
+    title="The Automation Edge"
+    description="Practical, scalable AI automation systems designed to streamline workflows, integrate tools, and support real business growth."
+  />
+</FadeIn>
+<p className="sr-only">
+  Businesses choose AI automation services because they reduce manual work,
+  improve efficiency, and integrate systems using intelligent workflows and tools like n8n.
+</p>
+
+
 
       <StaggerChildren className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {reasons.map((reason) => (

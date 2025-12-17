@@ -8,37 +8,43 @@ import { StaggerChildren, StaggerItem } from "@/components/animations/stagger-ch
 const industries = [
   {
     name: "Yoga & Wellness",
-    description: "Digital solutions for yoga studios, wellness centers, and retreat facilities in Rishikesh.",
+    description:
+      "AI automation for yoga studios and retreat centers, including booking workflows, lead follow-ups, and customer communication systems.",
     href: "/industries/yoga-wellness",
     image: "/yoga-wellness-studio-peaceful.jpg",
   },
   {
     name: "Tourism & Hotels",
-    description: "Booking systems and digital presence for hotels, resorts, and travel agencies.",
+    description:
+      "AI-powered automation for hotels and tourism businesses, streamlining bookings, inquiries, and guest communication.",
     href: "/industries/tourism-hotels",
     image: "/himalayan-hotel-resort-tourism.jpg",
   },
   {
     name: "Education",
-    description: "E-learning platforms and management systems for schools and coaching centers.",
+    description:
+      "Automation systems for educational institutes to manage admissions, communication, and internal workflows efficiently.",
     href: "/industries/education",
     image: "/modern-education-learning-platform.jpg",
   },
   {
     name: "Small Businesses",
-    description: "Affordable digital solutions to help local businesses grow online.",
+    description:
+      "Affordable AI automation solutions that help small businesses automate leads, follow-ups, and daily operations.",
     href: "/industries/small-business",
     image: "/small-business-local-shop.jpg",
   },
   {
     name: "Startups",
-    description: "MVP development and scalable solutions for innovative startups.",
+    description:
+      "AI automation for startups to validate ideas faster, automate workflows, and scale operations with minimal overhead.",
     href: "/industries/startups",
     image: "/startup-team-modern-office.jpg",
   },
   {
     name: "Local Services",
-    description: "Online presence and booking systems for service-based businesses.",
+    description:
+      "Automation workflows for service-based businesses to manage bookings, customer queries, and backend processes.",
     href: "/industries/local-services",
     image: "/professional-service-business.jpg",
   },
@@ -50,10 +56,15 @@ export function Industries() {
       <FadeIn>
         <SectionHeader
           eyebrow="Industries We Serve"
-          title="Solutions tailored for your industry"
-          description="We understand the unique challenges of businesses in Uttarakhand."
+          title="AI Automation Use Cases Across Key Industries"
+          description="We design industry-specific AI automation systems that streamline workflows, reduce manual work, and improve operational efficiency."
         />
       </FadeIn>
+      <p className="sr-only">
+  AI automation use cases vary by industry, helping businesses automate bookings,
+  customer communication, lead handling, and backend workflows efficiently.
+</p>
+
 
       <StaggerChildren className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {industries.map((industry) => (
@@ -65,7 +76,7 @@ export function Industries() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={industry.image || "/placeholder.svg"}
-                  alt={industry.name}
+                  alt={`${industry.name} AI automation use case`}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -78,5 +89,6 @@ export function Industries() {
         ))}
       </StaggerChildren>
     </Section>
+    
   )
 }
