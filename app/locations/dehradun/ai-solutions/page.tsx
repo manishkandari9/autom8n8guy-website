@@ -1,4 +1,3 @@
-"use client"
 
 import type { Metadata } from "next"
 import { LocationPageTemplate } from "@/components/location-page-template"
