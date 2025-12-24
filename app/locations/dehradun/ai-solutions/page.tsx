@@ -1,9 +1,14 @@
-"use client"
-
 import type { Metadata } from "next"
 import { LocationPageTemplate } from "@/components/location-page-template"
 import { CTA } from "@/components/home/cta"
-import { Bot, MessageSquare, Brain, Zap, Workflow, Wrench } from "lucide-react"
+import {
+  Bot,
+  MessageSquare,
+  Brain,
+  Zap,
+  Workflow,
+  Wrench,
+} from "lucide-react"
 
 export const metadata: Metadata = {
   title: "AI Solutions in Dehradun | Chatbots & AI Automation",
@@ -42,64 +47,76 @@ export default function DehradunAISolutionsPage() {
           {
             icon: MessageSquare,
             title: "AI Chatbots",
-            description: "Intelligent chatbots that handle customer queries in Hindi and English.",
+            description:
+              "Intelligent chatbots that handle customer queries in Hindi and English.",
             href: "/services/ai/chatbots",
           },
           {
             icon: Bot,
             title: "AI Agents",
-            description: "Autonomous AI agents that complete complex business tasks.",
+            description:
+              "Autonomous AI agents that complete complex business tasks.",
             href: "/services/ai/agents",
           },
           {
             icon: Brain,
             title: "Custom AI Tools",
-            description: "Purpose-built AI solutions for your specific business needs.",
+            description:
+              "Purpose-built AI solutions for your specific business needs.",
             href: "/services/ai/custom-tools",
           },
           {
             icon: Zap,
             title: "AI Integration",
-            description: "Add AI capabilities to your existing systems and workflows.",
+            description:
+              "Add AI capabilities to your existing systems and workflows.",
             href: "/services/ai/integration",
           },
           {
             icon: Workflow,
             title: "AI Automation",
-            description: "Intelligent automation that learns and improves over time.",
+            description:
+              "Intelligent automation that learns and improves over time.",
             href: "/services/ai/automation-systems",
           },
           {
             icon: Wrench,
             title: "AI Consulting",
-            description: "Discover how AI can benefit your specific business.",
+            description:
+              "Discover how AI can benefit your specific business.",
             href: "/contact",
           },
         ]}
         industries={[
           {
             name: "Healthcare",
-            description: "AI-powered appointment booking and patient inquiry handling.",
+            description:
+              "AI-powered appointment booking and patient inquiry handling.",
           },
           {
             name: "Education",
-            description: "Intelligent tutoring and student query resolution.",
+            description:
+              "Intelligent tutoring and student query resolution.",
           },
           {
             name: "Real Estate",
-            description: "AI chatbots for property inquiries and lead qualification.",
+            description:
+              "AI chatbots for property inquiries and lead qualification.",
           },
           {
             name: "Retail",
-            description: "Product recommendations and customer support automation.",
+            description:
+              "Product recommendations and customer support automation.",
           },
           {
             name: "Professional Services",
-            description: "Client inquiry handling and document processing.",
+            description:
+              "Client inquiry handling and document processing.",
           },
           {
             name: "Hospitality",
-            description: "Booking assistance and guest services automation.",
+            description:
+              "Booking assistance and guest services automation.",
           },
         ]}
         benefits={[
@@ -116,32 +133,27 @@ export default function DehradunAISolutionsPage() {
           {
             question: "Can AI chatbots work in Hindi?",
             answer:
-              "Yes! Our AI chatbots support both Hindi and English, and can even switch between languages in the same conversation. This is essential for serving customers in Dehradun effectively.",
+              "Yes. Our AI chatbots support both Hindi and English and can switch languages mid-conversation, which is ideal for businesses in Dehradun.",
           },
           {
             question: "Is AI too expensive for small businesses?",
             answer:
-              "Not anymore. We offer AI solutions starting from ₹25,000, with pay-per-use options for the underlying AI. Small businesses can start with simple chatbots and expand as they see results.",
+              "No. Solutions start from ₹25,000 with scalable pricing. Businesses can begin small and expand based on results.",
           },
           {
-            question: "How long does it take to implement AI?",
+            question: "How long does implementation take?",
             answer:
-              "A basic AI chatbot can be deployed in 2-3 weeks. More complex AI solutions may take 1-2 months. We start with quick wins and expand from there.",
+              "Basic chatbots take 2–3 weeks. Advanced AI systems typically take 1–2 months.",
           },
           {
-            question: "Do you provide training on using AI tools?",
+            question: "Do you provide training?",
             answer:
-              "Yes, we provide comprehensive training on managing and monitoring your AI solutions. We also offer ongoing support to help you get the most from your investment.",
+              "Yes. Full training and ongoing support are included to ensure maximum ROI.",
           },
           {
-            question: "What happens if the AI makes mistakes?",
+            question: "Can AI integrate with existing systems?",
             answer:
-              "We implement safeguards including confidence thresholds and human handoff for uncertain situations. The AI improves over time based on feedback and corrections.",
-          },
-          {
-            question: "Can AI integrate with my existing systems?",
-            answer:
-              "Yes, we can integrate AI solutions with your existing CRM, helpdesk, website, WhatsApp, and other systems. The AI works with your current tools.",
+              "Yes. We integrate with CRMs, websites, WhatsApp, helpdesks, and internal tools.",
           },
         ]}
         localInfo={{
@@ -155,9 +167,16 @@ export default function DehradunAISolutionsPage() {
             "Vikasnagar",
             "Selaqui",
           ],
-          landmarks: ["IT Park Dehradun", "MDDA", "Graphic Era University", "DIT University", "IMS Unison University"],
+          landmarks: [
+            "IT Park Dehradun",
+            "MDDA",
+            "Graphic Era University",
+            "DIT University",
+            "IMS Unison University",
+          ],
         }}
       />
+
       <CTA />
     </>
   )
