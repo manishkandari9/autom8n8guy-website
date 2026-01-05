@@ -1,4 +1,4 @@
-"use client"
+// This allows icon components (React functions) to be passed as props
 import Link from "next/link"
 import { Section, SectionHeader } from "@/components/ui/section"
 import { FadeIn } from "@/components/animations/fade-in"
