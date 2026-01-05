@@ -6,22 +6,12 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
-const services = [
+const serviceMenu = [
   {
-    category: "AI Automation",
+    category: "Primary Services",
     items: [
-      { name: "Business Process Automation", href: "/automation/business-process" },
-      { name: "n8n Workflow Automation", href: "/automation/n8n-workflows" },
-      { name: "CRM & Lead Automation", href: "/automation/crm" },
-      { name: "Email & WhatsApp Automation", href: "/automation/communication" },
-    ],
-  },
-  {
-    category: "Automation Solutions",
-    items: [
-      { name: "Website Automation", href: "/solutions/website-automation" },
-      { name: "Backend & API Automation", href: "/solutions/backend-automation" },
-      { name: "Dashboard & Reporting", href: "/solutions/dashboards" },
+      { name: "Business Automation", href: "/services/automation" },
+      { name: "AI Solutions", href: "/services/ai" },
     ],
   },
   {
@@ -29,19 +19,24 @@ const services = [
     items: [
       { name: "Web Development", href: "/services/web-development" },
       { name: "Full-Stack Development", href: "/services/full-stack" },
-      { name: "AI Integrations", href: "/services/ai-integration" },
+    ],
+  },
+  {
+    category: "Locations",
+    items: [
+      { name: "Dehradun", href: "/locations/dehradun" },
+      { name: "Rishikesh", href: "/locations/rishikesh" },
     ],
   },
 ]
 
-
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Automation", href: "/automation", hasDropdown: true },
+  { name: "Services", href: "/services", hasDropdown: true },
   { name: "Industries", href: "/industries" },
   { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "/blog" },
+  { name: "FAQ", href: "/faq" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -56,9 +51,9 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">AS</span>
+              <span className="text-primary-foreground font-bold text-sm">A8</span>
             </div>
-            <span className="font-semibold text-lg text-foreground">Autom8Solution</span>
+            <span className="font-semibold text-lg text-foreground">Autom8n8</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -85,12 +80,14 @@ export function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute left-0 top-full pt-2 w-[600px]"
+                        className="absolute left-0 top-full pt-2 w-[500px]"
                       >
-                        <div className="bg-card border border-border rounded-xl p-6 shadow-xl grid grid-cols-2 gap-6">
-                          {services.map((category) => (
+                        <div className="bg-card border border-border rounded-xl p-6 shadow-xl space-y-6">
+                          {serviceMenu.map((category) => (
                             <div key={category.category}>
-                              <h4 className="font-semibold text-foreground mb-3 text-sm">{category.category}</h4>
+                              <h4 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wide text-primary">
+                                {category.category}
+                              </h4>
                               <ul className="space-y-2">
                                 {category.items.map((item) => (
                                   <li key={item.name}>
@@ -124,8 +121,8 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center lg:gap-4">
-            <Button asChild>
-              <Link href="/contact">Book Free Consultation</Link>
+            <Button asChild size="sm">
+              <a href="tel:+917830130183">+91 7830130183</a>
             </Button>
           </div>
 
@@ -161,7 +158,7 @@ export function Header() {
                 </Link>
               ))}
               <Button asChild className="w-full mt-4">
-                <Link href="/contact">Book Free Consultation</Link>
+                <a href="tel:+917830130183">Call: +91 7830130183</a>
               </Button>
             </div>
           </motion.div>
