@@ -11,40 +11,42 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 
 export const metadata: Metadata = {
   title: {
-    default: "TechCraft Solutions | Web Development & AI Services in Dehradun & Rishikesh",
-    template: "%s | TechCraft Solutions",
+    default: "Autom8n8 Systems | Business Automation & AI Solutions | Dehradun, Rishikesh",
+    template: "%s | Autom8n8 Systems",
   },
   description:
-    "Premium IT services including web development, full-stack applications, business automation, and AI solutions for businesses in Dehradun, Rishikesh, and Uttarakhand.",
+    "Automation-first digital agency specializing in business automation, AI solutions, and custom software development for businesses in Dehradun and Rishikesh, Uttarakhand. Built by Manish Kandari.",
   keywords: [
-    "web development dehradun",
-    "IT services rishikesh",
-    "AI solutions uttarakhand",
-    "business automation",
-    "full-stack development",
+    "business automation dehradun",
+    "AI solutions rishikesh",
+    "workflow automation",
+    "custom automation",
+    "automation agency",
+    "digital transformation",
+    "AI agents",
   ],
-  authors: [{ name: "TechCraft Solutions" }],
-  creator: "TechCraft Solutions",
+  authors: [{ name: "Manish Kandari" }],
+  creator: "Manish Kandari",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://techcraft.in",
-    siteName: "TechCraft Solutions",
-    title: "TechCraft Solutions | Web Development & AI Services",
+    url: "https://autom8n8.com",
+    siteName: "Autom8n8 Systems",
+    title: "Autom8n8 Systems | Business Automation & AI Solutions",
     description:
-      "Premium IT services including web development, full-stack applications, business automation, and AI solutions.",
+      "Automation-first digital agency specializing in business automation, AI solutions, and custom software development for businesses in Dehradun and Rishikesh.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechCraft Solutions | Web Development & AI Services",
+    title: "Autom8n8 Systems | Business Automation & AI Solutions",
     description:
-      "Premium IT services including web development, full-stack applications, business automation, and AI solutions.",
+      "Automation-first digital agency specializing in business automation, AI solutions, and custom software development.",
   },
   robots: {
     index: true,
     follow: true,
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -61,21 +63,45 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "TechCraft Solutions",
+              name: "Autom8n8 Systems",
               description:
-                "Premium IT services including web development, full-stack applications, business automation, and AI solutions.",
-              url: "https://techcraft.in",
+                "Automation-first digital agency specializing in business automation, AI solutions, and custom software development.",
+              founder: {
+                "@type": "Person",
+                name: "Manish Kandari",
+              },
+              url: "https://autom8n8.com",
               telephone: "+91-9876543210",
-              email: "hello@techcraft.in",
+              email: "hello@autom8n8.com",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Dehradun",
                 addressRegion: "Uttarakhand",
+                postalCode: "248001",
                 addressCountry: "IN",
               },
-              areaServed: ["Dehradun", "Rishikesh", "Uttarakhand"],
-              serviceType: ["Web Development", "Full-Stack Development", "Business Automation", "AI Solutions"],
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Dehradun",
+                  containedIn: "Uttarakhand",
+                },
+                {
+                  "@type": "City",
+                  name: "Rishikesh",
+                  containedIn: "Uttarakhand",
+                },
+              ],
+              serviceType: [
+                "Business Automation",
+                "AI Solutions",
+                "Web Development",
+                "Full-Stack Development",
+                "Custom Software Development",
+                "Automation-Driven SEO",
+              ],
               priceRange: "$$",
+              sameAs: ["https://twitter.com/autom8n8", "https://linkedin.com/company/autom8n8"],
             }),
           }}
         />
