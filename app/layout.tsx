@@ -11,14 +11,14 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 
 export const metadata: Metadata = {
   title: {
-    default: "Autom8n8 Systems | Business Automation & AI Solutions | Dehradun, Rishikesh",
+    default: "Autom8n8 Systems | Business Automation & AI Solutions",
     template: "%s | Autom8n8 Systems",
   },
   description:
-    "Automation-first digital agency specializing in business automation, AI solutions, and custom software development for businesses in Dehradun and Rishikesh, Uttarakhand. Built by Manish Kandari.",
+    "Automation-first digital agency specializing in business automation, AI solutions, and custom software development. Built by Manish Kandari.",
   keywords: [
-    "business automation dehradun",
-    "AI solutions rishikesh",
+    "business automation",
+    "AI solutions",
     "workflow automation",
     "custom automation",
     "automation agency",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Autom8n8 Systems",
     title: "Autom8n8 Systems | Business Automation & AI Solutions",
     description:
-      "Automation-first digital agency specializing in business automation, AI solutions, and custom software development for businesses in Dehradun and Rishikesh.",
+      "Automation-first digital agency specializing in business automation, AI solutions, and custom software development.",
   },
   twitter: {
     card: "summary_large_image",
@@ -73,35 +73,18 @@ export default function RootLayout({
               url: "https://autom8n8.com",
               telephone: "+91-9876543210",
               email: "hello@autom8n8.com",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Dehradun",
-                addressRegion: "Uttarakhand",
-                postalCode: "248001",
-                addressCountry: "IN",
+              areaServed: {
+                "@type": "Country",
+                name: "India",
               },
-              areaServed: [
-                {
-                  "@type": "City",
-                  name: "Dehradun",
-                  containedIn: "Uttarakhand",
-                },
-                {
-                  "@type": "City",
-                  name: "Rishikesh",
-                  containedIn: "Uttarakhand",
-                },
-              ],
               serviceType: [
                 "Business Automation",
                 "AI Solutions",
                 "Web Development",
                 "Full-Stack Development",
                 "Custom Software Development",
-                "Automation-Driven SEO",
               ],
               priceRange: "$$",
-              sameAs: ["https://twitter.com/autom8n8", "https://linkedin.com/company/autom8n8"],
             }),
           }}
         />

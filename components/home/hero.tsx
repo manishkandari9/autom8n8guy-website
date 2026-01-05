@@ -31,34 +31,33 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
               </span>
-              <span className="text-sm text-muted-foreground">Serving Dehradun & Rishikesh</span>
+              <span className="text-sm text-muted-foreground">Automation-First Solutions</span>
             </div>
           </FadeIn>
 
           <FadeIn delay={0.1}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance">
-            Where AI <span className="text-primary">Automation</span> Drives Business Growth
+              Where AI <span className="text-primary">Automation</span> Drives Business Growth
             </h1>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty">
-             We build AI-powered systems that combine smart automation using n8n, modern websites,
-scalable backend architecture, and integrated business tools to streamline workflows,
-improve efficiency, and help businesses grow faster.
+              We build AI-powered systems that combine smart automation, modern websites, scalable backend architecture,
+              and integrated business tools to streamline workflows, improve efficiency, and help businesses grow
+              faster.
             </p>
           </FadeIn>
           <p className="sr-only">
-  We provide AI automation services including n8n workflow automation, AI chatbot integration,
-  backend automation, and AI-powered web systems for businesses seeking scalable growth.
-</p>
-
+            We provide AI automation services including workflow automation, AI chatbot integration, backend automation,
+            and AI-powered web systems for businesses seeking scalable growth.
+          </p>
 
           <FadeIn delay={0.3}>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild className="group">
                 <Link href="/contact">
-                 Start Automation Now
+                  Start Automation Now
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
@@ -67,13 +66,6 @@ improve efficiency, and help businesses grow faster.
               </Button>
             </div>
           </FadeIn>
-          <Link
-  href="/ai-automation"
-  className="mt-4 inline-block text-sm text-muted-foreground underline"
->
-  Explore AI Automation Services
-</Link>
-
 
           {/* Stats */}
           <FadeIn delay={0.4}>
