@@ -25,63 +25,60 @@ export const metadata: Metadata = {
 
 const serviceCategories = [
   {
+    icon: Workflow,
+    title: "Business Automation",
+    description:
+      "Streamline operations with intelligent automation. From CRM workflows to process automation, we reduce manual work and eliminate errors. Save 20+ hours per week with custom-built automation systems.",
+    href: "/services/automation",
+    services: [
+      { name: "Business Process Automation", href: "/services/automation/business-process" },
+      { name: "CRM Automation", href: "/services/automation/crm" },
+      { name: "Email Automation", href: "/services/automation/email" },
+      { name: "Social Media Automation", href: "/services/automation/social-media" },
+      { name: "Data Scraping & Webhooks", href: "/services/automation/data-scraping" },
+      { name: "Custom Go-based Automation", href: "/services/automation/custom-automation" },
+    ],
+  },
+  {
+    icon: Bot,
+    title: "AI Solutions & Agents",
+    description:
+      "Leverage artificial intelligence to enhance operations. AI chatbots for customer support, intelligent agents for task automation, and custom AI tools tailored to your business needs.",
+    href: "/services/ai",
+    services: [
+      { name: "AI Chatbots", href: "/services/ai/chatbots" },
+      { name: "AI Agents", href: "/services/ai/agents" },
+      { name: "AI Integration", href: "/services/ai/integration" },
+      { name: "Custom AI Tools", href: "/services/ai/custom-tools" },
+      { name: "AI Automation Systems", href: "/services/ai/automation-systems" },
+    ],
+  },
+  {
     icon: Globe,
     title: "Web Development",
     description:
-      "Custom websites that establish your online presence and convert visitors into customers. From business sites to e-commerce platforms.",
+      "Automation-ready websites that capture leads and integrate seamlessly with your systems. From business sites to landing pages, built for conversion and integration.",
     href: "/services/web-development",
     services: [
       { name: "Business Websites", href: "/services/web-development/business-websites" },
       { name: "Landing Pages", href: "/services/web-development/landing-pages" },
       { name: "E-commerce", href: "/services/web-development/ecommerce" },
-      { name: "Portfolio Websites", href: "/services/web-development/portfolio" },
       { name: "SEO-Friendly Websites", href: "/services/web-development/seo-friendly" },
       { name: "Website Redesign", href: "/services/web-development/redesign" },
-      { name: "Website Maintenance", href: "/services/web-development/maintenance" },
     ],
   },
   {
     icon: Layers,
     title: "Full-Stack Development",
     description:
-      "Powerful web applications built with modern technologies. Custom solutions that scale with your business needs.",
+      "Powerful web applications with automation at the core. Custom backends, dashboards, and systems designed to scale with your automation needs.",
     href: "/services/full-stack",
     services: [
       { name: "Custom Web Applications", href: "/services/full-stack/custom-web-apps" },
       { name: "SaaS Development", href: "/services/full-stack/saas" },
       { name: "Admin Dashboards", href: "/services/full-stack/dashboards" },
       { name: "API Development", href: "/services/full-stack/api-development" },
-      { name: "Authentication Systems", href: "/services/full-stack/authentication" },
       { name: "Database Design", href: "/services/full-stack/database-design" },
-    ],
-  },
-  {
-    icon: Workflow,
-    title: "Business Automation",
-    description:
-      "Streamline operations and save time with intelligent automation. Reduce manual work and eliminate errors.",
-    href: "/services/automation",
-    services: [
-      { name: "Business Process Automation", href: "/services/automation/business-process" },
-      { name: "CRM Automation", href: "/services/automation/crm" },
-      { name: "Social Media Automation", href: "/services/automation/social-media" },
-      { name: "Email Automation", href: "/services/automation/email" },
-      { name: "Data Scraping", href: "/services/automation/data-scraping" },
-      { name: "n8n Workflow Automation", href: "/services/automation/n8n-workflows" },
-    ],
-  },
-  {
-    icon: Bot,
-    title: "AI Solutions",
-    description:
-      "Leverage artificial intelligence to enhance your business operations. From chatbots to custom AI tools.",
-    href: "/services/ai",
-    services: [
-      { name: "AI Chatbot Development", href: "/services/ai/chatbots" },
-      { name: "AI Agents", href: "/services/ai/agents" },
-      { name: "Custom AI Tools", href: "/services/ai/custom-tools" },
-      { name: "AI Integration", href: "/services/ai/integration" },
-      { name: "AI Automation Systems", href: "/services/ai/automation-systems" },
     ],
   },
 ]
@@ -89,38 +86,38 @@ const serviceCategories = [
 const additionalServices = [
   {
     icon: ShoppingCart,
-    title: "E-commerce Solutions",
-    description: "Complete online stores with payment integration, inventory management, and order tracking.",
+    title: "Automation-Ready E-commerce",
+    description: "Complete online stores with automated inventory, payment processing, and order workflows.",
     href: "/services/web-development/ecommerce",
   },
   {
     icon: Palette,
     title: "UI/UX Design",
-    description: "Beautiful, intuitive interfaces that enhance user experience and drive conversions.",
+    description: "Beautiful interfaces designed for automation integration and user conversion.",
     href: "/services/design",
   },
   {
     icon: BarChart3,
-    title: "Analytics & Reporting",
-    description: "Custom dashboards and reporting solutions to track your business metrics.",
+    title: "Analytics & Automation Dashboards",
+    description: "Real-time dashboards that track automation performance and business metrics.",
     href: "/services/full-stack/dashboards",
   },
   {
     icon: Mail,
-    title: "Email Systems",
-    description: "Automated email workflows and newsletter systems to engage your audience.",
+    title: "Email Automation Systems",
+    description: "Automated email workflows, newsletters, and transactional emails at scale.",
     href: "/services/automation/email",
   },
   {
     icon: Database,
-    title: "Database Solutions",
-    description: "Efficient database design and management for optimal performance.",
+    title: "Database & API Solutions",
+    description: "Robust databases and APIs designed for automation and integration.",
     href: "/services/full-stack/database-design",
   },
   {
     icon: Globe,
-    title: "SEO Optimization",
-    description: "Search engine optimization to improve your visibility and organic traffic.",
+    title: "Automation-Driven SEO",
+    description: "SEO optimization powered by automated workflows and AI-driven insights.",
     href: "/services/web-development/seo-friendly",
   },
 ]
@@ -236,18 +233,19 @@ export default function ServicesPage() {
             "@type": "Service",
             provider: {
               "@type": "LocalBusiness",
-              name: "TechCraft Solutions",
+              name: "Autom8n8 Systems",
               areaServed: ["Dehradun", "Rishikesh", "Uttarakhand"],
             },
             serviceType: [
-              "Web Development",
-              "Full-Stack Development",
               "Business Automation",
               "AI Solutions",
-              "E-commerce Development",
+              "Web Development",
+              "Full-Stack Development",
+              "AI Chatbots",
+              "Automation Services",
             ],
             description:
-              "Comprehensive IT services including web development, application development, business automation, and AI solutions.",
+              "Automation-first IT services including business automation, AI solutions, web development, and full-stack applications for businesses in Dehradun and Rishikesh.",
           }),
         }}
       />
